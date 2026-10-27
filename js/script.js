@@ -42,12 +42,20 @@ let numero = prompt ('Dime un numero, te saco su tabla de multiplicar')
 
 parseInt(numero)
 
+while (isNaN(numero)){
+   numero = prompt ('Tiene que ser un numero no otra cosa') 
+}
+
 if (!isNaN(numero)){
     console.log('TABLAD DE MULTIPLICAR DEL ' + numero);
     for (let i=1; i<=10; i++){
         console.log(numero + " X " + i + " = " + numero * i);
     }
+} else {
+    console.log('lo siento algo ha fallado');
 }
+
+
 /*
 Ejercicio 4: Cuenta regresiva
 
@@ -75,6 +83,10 @@ let numero2 = prompt ('Dime otro numero, hallare su factorial')
 
 parseInt(numero2)
 
+while (isNaN(numero2)){
+   numero2 = prompt ('Tiene que ser un numero no otra cosa') 
+}
+
 if (!isNaN(numero2)){
     let resultado = 1;
     for (let i=1; i<=numero2; i++){
@@ -82,4 +94,4 @@ if (!isNaN(numero2)){
     }
     console.log('Factorial de ' + numero2 + ': ');
     console.log(resultado); 
-}
+} 
