@@ -84,7 +84,7 @@ let numero2 = prompt ('Dime otro numero, hallare su factorial')
 parseInt(numero2)
 
 while (isNaN(numero2)){
-   numero2 = prompt ('Tiene que ser un numero no otra cosa') 
+   numero2 = prompt ('¿Otra vez?... Que Tiene que ser un NUMERO, pesado!!!') 
 }
 
 if (!isNaN(numero2)){
