@@ -65,7 +65,7 @@ Escribe un programa que imprima una cuenta regresiva desde 10 hasta 1. Cada núm
 
 function cuentaRegresiva(){
     for (let i=10; i>=1; i--){
-        console.log(i + '\n');
+        console.log(i + '\n'); // salto de linea manual: \n, consolelog hace ya salto de linea
     }
     
 }
