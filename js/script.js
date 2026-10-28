@@ -38,21 +38,15 @@ Pide al usuario un número mediante prompt(). Luego, imprime su tabla de multipl
 5 x 10 = 50
 */
 
-let numero = prompt ('Dime un numero, te saco su tabla de multiplicar')
+let numero;
 
-parseInt(numero)
+do {
+    numero = parseInt(prompt('Dime un numero, te saco su tabla de multiplicar'));  
+} while (isNaN(numero)); 
 
-while (isNaN(numero)){
-   numero = prompt ('Tiene que ser un numero no otra cosa') 
-}
-
-if (!isNaN(numero)){
-    console.log('TABLAD DE MULTIPLICAR DEL ' + numero);
-    for (let i=1; i<=10; i++){
-        console.log(numero + " X " + i + " = " + numero * i);
-    }
-} else {
-    console.log('lo siento algo ha fallado');
+console.log('TABLA DE MULTIPLICAR DEL ' + numero);
+for (let i = 1; i <= 10; i++) {
+    console.log(numero + " X " + i + " = " + (numero * i));
 }
 
 
@@ -79,19 +73,19 @@ Ejemplo:
 5! = 5 x 4 x 3 x 2 x 1 = 120
 */
 
-let numero2 = prompt ('Dime otro numero, hallare su factorial')
+let numero2 = prompt('Dime otro numero, hallare su factorial');
 
-parseInt(numero2)
+numero2 = parseInt(numero2);
 
-while (isNaN(numero2)){
-   numero2 = prompt ('¿Otra vez?... Que Tiene que ser un NUMERO, pesado!!!') 
+while (isNaN(numero2)) {
+   numero2 = prompt('¿Otra vez?... Que Tiene que ser un NUMERO, pesado!!!');
+   numero2 = parseInt(numero2); 
 }
 
-if (!isNaN(numero2)){
-    let resultado = 1;
-    for (let i=1; i<=numero2; i++){
-        resultado *= i
-    }
-    console.log('Factorial de ' + numero2 + ': ');
-    console.log(resultado); 
-} 
+let resultado = 1;
+for (let i = 1; i <= numero2; i++) {
+    resultado *= i;
+}
+
+console.log('Factorial de ' + numero2 + ': ');
+console.log(resultado);
