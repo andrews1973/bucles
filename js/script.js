@@ -76,6 +76,7 @@ Ejemplo:
 let numero2 = parseInt(prompt('Dime otro numero, hallare su factorial'));
 
 while (isNaN(numero2)) {
+// si falla cambiamos el mensaje para que quede claro
    numero2 = prompt('¿Otra vez?... Que Tiene que ser un NUMERO, pesado!!!');
    numero2 = parseInt(numero2); 
 }
