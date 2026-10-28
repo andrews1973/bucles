@@ -73,9 +73,7 @@ Ejemplo:
 5! = 5 x 4 x 3 x 2 x 1 = 120
 */
 
-let numero2 = prompt('Dime otro numero, hallare su factorial');
-
-numero2 = parseInt(numero2);
+let numero2 = parseInt(prompt('Dime otro numero, hallare su factorial'));
 
 while (isNaN(numero2)) {
    numero2 = prompt('¿Otra vez?... Que Tiene que ser un NUMERO, pesado!!!');
